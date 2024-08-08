@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page for QuickSight Embedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <h1>Test Page for QuickSight Embedding</h1>
+    <h2>This is a placeholder page for embedding a QuickSight dashboard.</h2>
+    <div class="embed-container" id="embed-container"></div>
+
+    <script>
+        // Function to set the embed URL
+        function setEmbedUrl(embedUrl) {
+            const embedContainer = document.getElementById('embed-container');
+            const iframe = document.createElement('iframe');
+            iframe.width = '100%';
+            iframe.height = '600px';
+            iframe.src = embedUrl;
+            iframe.frameBorder = '0';
+            iframe.allowFullscreen = true;
+            embedContainer.appendChild(iframe);
+        }
+
+        // Example: Call setEmbedUrl with the generated embed URL
+        setEmbedUrl('https://us-east-1.quicksight.aws.amazon.com/embed/a4c6e313b6bc4906b2334a8e5359bc5c/dashboards/fe1580e2-11ca-4e03-952e-ae6608bd1fd4?isauthcode=true&identityprovider=quicksight&code=AYABeNtsDI2fH7i14oiw8neFMVsAAAABAAdhd3Mta21zAEthcm46YXdzOmttczp1cy1lYXN0LTE6MjU5NDgwNDYyMTMyOmtleS81NGYwMjdiYy03MDJhLTQxY2YtYmViNS0xNDViOTExNzFkYzMAuAECAQB4xtoTZf7IGoPQKGWjcNLglYg8fHKEoB_X6wbByfSPUT0B6ymvnj27xrvnBFDQfQ2t7QAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDGNWrAAOjVluOlflyAIBEIA710wYcOLg1YgTfrLzK5PytveVF-0U-IMkFu0CGgDn8BWH7IO1NOAWfB2N8E75pw5wCvGnITA6JTdEORUCAAAAAAwAABAAAAAAAAAAAAAAAAAAKETFeIqj-dUsDyZhlTGPpv____8AAAABAAAAAAAAAAAAAAABAAAAoQetDDDhUjj2rtXia7JA-qQMnL5yUzvGRgvhQgZFP_VIdGexFNOgfdqHMUJ5ghCS6tRvSKh349lEvWE7c9Tt_HUiBjTobSp1HGr5Zbox3oQjT4i09ZFIjrpDIRwJPMz9sOZnxen4c92fQDHnLBb5bkFA2M3QjpkSjoQVPkNlmNF7XPfGjmUOvqrMtXjaoaE2pZtF8YzSQ90XLq-jUUJyJkb0bcHZ9hJp56NLDBlXqmmQvA%3D%3D');
+    </script>
+</body>
+</html>
